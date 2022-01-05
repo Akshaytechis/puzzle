@@ -1,0 +1,42 @@
+/* cellSize = 70px */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  font-family: Helvetica, sans-serif;
+}
+
+html body .container {
+  height: 100%;
+}
+
+div#main.container {
+  display: flex;
+}
+.container .game {
+  margin: 20% auto auto auto;
+  text-align: center;
+  line-height: 70px;
+  width: 348px;
+  height: 348px;
+}
+.container .game .cell {
+  width: 70px;
+  height: 70px;
+  margin-right: 7px;
+  border-radius: 4px;
+  margin-bottom: 7px;
+  background: #fff;
+  box-shadow: rgb(0 0 0 / 20%) 0 1px 2px 0;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  position: absolute;
+  transition: all 0.3s ease-in;
+}
+.empty {
+  opacity: 0;
+}
